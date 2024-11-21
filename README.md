@@ -12,7 +12,7 @@ Uma página web promocional para exibir e vender kits especiais de Natal. Ideal 
 ## 🛠️ Tecnologias utilizadas
 
 - **HTML5**: Estrutura do site.
-- **CSS3**: Estilização (não incluído neste repositório, mas referenciado como `style.css`).
+- **CSS3**: Estilização.
 
 ## 📂 Estrutura de arquivos
 
