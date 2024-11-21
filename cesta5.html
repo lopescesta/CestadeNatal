@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta kit Azul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1></h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="details">
+            <h1>KIT AZUL 21 ITENS</h1>
+            <h2>Itens inclusos:</h2>
+            <ul>
+                <li>1 un Caixa Decorada</li>
+                <li>1 un Panetone Frutas 400G São Sebastião</li>
+                <li>1 un Sidra Lider 660ML</li>
+                <li>1 un Mac Basilar 400G Parafuso</li>
+                <li>1 un Batata Palha Ki krokant 100G</li>
+                <li>1 un Molho Tomate Val 300G Trad Sache</li>
+                <li>1 un Azeitona Tozzi Sc 80G Verde C/Caroço</li>
+                <li>1 un Maionese Fugini 180G Sc Tradicional</li>
+                <li>1 un Bisc Recheado Hipopo 100G Baunilha</li>
+                <li>3 un Bombom Lacta 20G Sonho De Valsa</li>
+                <li>2 un Paçoca Lual 20G Chico Bento</li>
+                <li>2 un Gelatina Apti 20G Morango</li>
+                <li>2 un Refresco Brassuk 20g Laranja</li>
+                <li>3 un Geladinho Biba Sortido</li>
+            </ul>
+            <h2>Preço: R$ 59,99</h2>
+            <!-- Botões -->
+            <div class="actions">
+                <a href="index.html" class="btn">Voltar</a>
+                <a href="#" onclick="openWhatsApp('5516999481001', 'Cesta Kit Azul - 21 Itens de R$59,99')" class="btn">Comprar</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Kits de Natal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function openWhatsApp(phoneNumber, basketName) {
+            const url = `https://wa.me/${phoneNumber}?text=Olá, gostaria de informações sobre a ${encodeURIComponent(basketName)}.`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

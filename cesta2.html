@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta kit dourado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1></h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="details">
+            <h1> KIT DOURADO 24 ITENS</h1>
+            <h2>Itens inclusos:</h2>
+            <ul>
+                <li>1 un Caixa Decorada</li> 
+                <li>1 un Panetone Bauducco 400G Frutas</li> 
+                <li>1 un Espumante Chuva de Prata</li>
+                <li>1 un Vinho Tinto Canção 750ML Suave</li>
+                <li>1 un Mac Basilar 400G Parafuso</li>
+                <li>1 un Batata Palha Ki krokant 100G</li>
+                <li>1 un Molho Tomate Val 300G Trad Sache</li>
+                <li>1 un Azeitona Tozzi Sc 80G Verde C/Caroço</li>
+                <li>1 un Creme de Leite Piracanjuba 200G Tp</li>
+                <li>1 un Leite Condensado Piracanjuba 395G T</li>
+                <li>1 un Biscoito Recheado Bono 90G Chocolate</li>
+                <li>1 un Choc Hersheys 82G Ao Leite</li>
+                <li>2 un Gelatina Apti 20G Morango</li>
+                <li>2 un Refresco Brassuk 20g Laranja</li>
+                <li>5 un Geladinho Biba Sortido</li>
+                <li>1 un Coco Ralado Indiano 50G</li>
+                <li>1 un Pão de Mel Cory 90G Chocolate</li>
+                <li>1 un Biscoito Triunfo 170G Maisena</li>
+            </ul>
+            <h2>Preço: R$ 119,99</h2>
+            <!-- Botões -->
+            <div class="actions">
+                <a href="index.html" class="btn">Voltar</a>
+                <a href="#" onclick="openWhatsApp('5516999481001', 'Cesta Kit Dourado - 24 Itens de R$119,99')" class="btn">Comprar</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Kits de Natal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function openWhatsApp(phoneNumber, basketName) {
+            const url = `https://wa.me/${phoneNumber}?text=Olá, gostaria de informações sobre a ${encodeURIComponent(basketName)}.`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

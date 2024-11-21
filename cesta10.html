@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta Basica pequena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1></h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="details">
+            <h2>Itens inclusos:</h2>
+            <ul>
+                <li>1 un Açucar Cristal Santa Isabel 5KG</li>
+                <li>1 un Biscoito Recheado Nikito 120G Choc com Morango</li>
+                <li>1 un Fuba Kinino 500G</li>
+                <li>1 un Molho de Tomate Fugini Tradicional 300G Sc</li>
+                <li>1 un Sabão em Barra Triex 1kg 5Un Neutro</li>
+                <li>1 un Sal Refinado Marfim 1KG</li>
+                <li>1 un Macarrão Flor de Lis 500G C/Ovos Parafuso</li>
+                <li>2 un Feijão Carioca Novo Tempo 1KG</li> 
+                <li>2 un Arroz Capricho 5KG Tipo1</li>
+                <li>2 un Oleo de Soja 900ML</li>
+            </ul>
+            <h2>Preço: R$ 124,00</h2>
+            <!-- Botões -->
+            <div class="actions">
+                <a href="index.html" class="btn">Voltar</a>
+                <a href="#" onclick="openWhatsApp('5516999481001', 'Cesta Basica pequena R$124,00')" class="btn">Comprar</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Kits de Natal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function openWhatsApp(phoneNumber, basketName) {
+            const url = `https://wa.me/${phoneNumber}?text=Olá, gostaria de informações sobre a ${encodeURIComponent(basketName)}.`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

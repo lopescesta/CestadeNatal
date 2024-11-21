@@ -1,0 +1,237 @@
+/* Reset Básico */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.png') no-repeat center center;
+    background-size: cover;
+    color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+/* Responsividade para o cabeçalho */
+@media (max-width: 768px) {
+    .header {
+        height: 150px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 120px;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Detalhes do Kit */
+.details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.details h1, .details h2 {
+    margin-bottom: 15px;
+    color: #8b0000;
+    text-align: center;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.details ul li {
+    font-size: 1rem;
+    color: #333;
+    padding-left: 10px;
+}
+
+.details .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.details .btn:hover {
+    background-color: #a00000;
+}
+
+/* Responsividade para detalhes */
+@media (max-width: 480px) {
+    .details {
+        padding: 15px;
+    }
+
+    .details ul li {
+        font-size: 0.9rem;
+    }
+
+    .details .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Seções genéricas (caso sejam reutilizadas no projeto) */
+.benefits-section, .kits, .contact-section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.benefits-section h2, .kits h2, .contact-section h2 {
+    margin-bottom: 15px;
+    color: #8b0000;
+    text-align: center;
+}
+
+.kits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kit {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.kit:hover {
+    transform: translateY(-5px);
+}
+
+.kit img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.kit h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.kit p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.kit .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.kit .btn:hover {
+    background-color: #a00000;
+}
+
+/* Responsividade para Kits */
+@media (max-width: 768px) {
+    .kits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kit {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .kit {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .kit h3 {
+        font-size: 1.2rem;
+    }
+
+    .kit p {
+        font-size: 0.9rem;
+    }
+
+    .kit .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
